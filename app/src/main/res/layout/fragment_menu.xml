@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@color/blue_lace"
+    android:layout_height="match_parent"
+    tools:context=".ui.MenuFragment">
+
+    <TextView
+        app:layout_constraintTop_toTopOf="parent"
+        android:id="@+id/choose_sector"
+        android:layout_width="0dp"
+        android:gravity="center"
+        android:textSize="30sp"
+        android:layout_marginTop="30dp"
+        android:textColor="@color/oldNavy"
+        android:text="Выберите раздел"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_height="wrap_content"/>
+
+    <TextView
+        app:layout_constraintEnd_toEndOf="@id/speaker"
+        app:layout_constraintStart_toStartOf="@id/speaker"
+        app:layout_constraintBottom_toTopOf="@id/speaker"
+        android:id="@+id/speaker_text"
+        android:layout_width="0dp"
+        android:textColor="@color/oldNavy"
+
+        android:text="Фразы"
+        android:gravity="center"
+        android:layout_height="wrap_content"/>
+
+    <ImageButton
+        android:layout_marginTop="30dp"
+        android:id="@+id/speaker"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:background="@drawable/row_bg"
+        android:src="@drawable/ic_baseline_audiotrack_24"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/choose_sector"
+        />
+
+    <TextView
+        app:layout_constraintEnd_toEndOf="@id/texts"
+        app:layout_constraintStart_toStartOf="@id/texts"
+        app:layout_constraintBottom_toTopOf="@id/texts"
+        android:id="@+id/texts_text"
+        android:layout_width="0dp"
+        android:text="Тексты"
+        android:textColor="@color/oldNavy"
+        android:gravity="center"
+        android:layout_height="wrap_content"/>
+
+    <ImageButton
+        android:id="@+id/texts"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:background="@drawable/row_bg"
+        android:layout_marginTop="30dp"
+        android:src="@drawable/ic_baseline_text_snippet_24"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/speaker"
+        />
+
+    <TextView
+        app:layout_constraintEnd_toEndOf="@id/myaudios"
+        app:layout_constraintStart_toStartOf="@id/myaudios"
+        app:layout_constraintBottom_toTopOf="@id/myaudios"
+        android:id="@+id/myaudios_text"
+        android:layout_width="0dp"
+        android:text="Мои записи"
+        android:gravity="center"
+        android:textColor="@color/darkTeal"
+
+        android:layout_height="wrap_content"/>
+
+    <ImageButton
+        android:id="@+id/myaudios"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/row_bg"
+        android:src="@drawable/ic_baseline_mic_24"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/texts" />
+</androidx.constraintlayout.widget.ConstraintLayout>

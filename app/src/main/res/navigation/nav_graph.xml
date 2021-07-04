@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/menuFragment">
+
+    <fragment
+        android:id="@+id/themesFragment"
+        android:name="com.example.ulchispeakingtrainer.ui.ThemesFragment"
+        android:label="fragment_themes"
+        tools:layout="@layout/fragment_themes" >
+        <action
+            android:id="@+id/action_themesFragment_to_phrasesFragment"
+            app:destination="@id/phrasesFragment" />
+
+    </fragment>
+    <fragment
+        android:id="@+id/phrasesFragment"
+        android:name="com.example.ulchispeakingtrainer.ui.PhrasesFragment"
+        android:label="fragment_phrases"
+        tools:layout="@layout/fragment_phrases" >
+        <argument
+            android:name="currentTheme"
+            app:argType="com.example.ulchispeakingtrainer.data.Theme" />
+
+    </fragment>
+    <fragment
+        android:id="@+id/textsFragment"
+        android:name="com.example.ulchispeakingtrainer.ui.TextsFragment"
+        android:label="fragment_texts"
+        tools:layout="@layout/fragment_texts" >
+        <action
+            android:id="@+id/action_textsFragment_to_audioFragment"
+            app:destination="@id/audioFragment" />
+
+    </fragment>
+    <fragment
+        android:id="@+id/menuFragment"
+        android:name="com.example.ulchispeakingtrainer.ui.MenuFragment"
+        android:label="fragment_menu"
+        tools:layout="@layout/fragment_menu" >
+        <action
+            android:id="@+id/action_menuFragment_to_themesFragment"
+            app:destination="@id/themesFragment" />
+        <action
+            android:id="@+id/action_menuFragment_to_textsFragment"
+            app:destination="@id/textsFragment" />
+        <action
+            android:id="@+id/action_menuFragment_to_newPhrasesFragment"
+            app:destination="@id/newPhrasesFragment" />
+        <action
+            android:id="@+id/action_menuFragment_to_aboutFragment"
+            app:destination="@id/aboutFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/audioFragment"
+        android:name="com.example.ulchispeakingtrainer.ui.AudioFragment"
+        android:label="fragment_audio"
+        tools:layout="@layout/fragment_audio">
+        <argument
+            android:name="currentText"
+            app:argType="com.example.ulchispeakingtrainer.data.UlchiText" />
+    </fragment>
+    <fragment
+        android:id="@+id/newPhrasesFragment"
+        android:name="com.example.ulchispeakingtrainer.ui.NewPhrasesFragment"
+        android:label="fragment_new_phrases"
+        tools:layout="@layout/fragment_new_phrases" >
+        <action
+            android:id="@+id/action_newPhrasesFragment_to_addNewPhraseFragment"
+            app:destination="@id/addNewPhraseFragment" />
+        <action
+            android:id="@+id/action_newPhrasesFragment_to_updateFragment"
+            app:destination="@id/updateFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/addNewPhraseFragment"
+        android:name="com.example.ulchispeakingtrainer.ui.AddNewPhraseFragment"
+        android:label="fragment_add_new_phrase"
+        tools:layout="@layout/fragment_add_new_phrase" />
+    <fragment
+        android:id="@+id/updateFragment"
+        android:name="com.example.ulchispeakingtrainer.ui.UpdateFragment"
+        android:label="fragment_update"
+        tools:layout="@layout/fragment_update" >
+        <argument
+            android:name="phrase"
+            app:argType="com.example.ulchispeakingtrainer.data.NewPhrase"/>
+    </fragment>
+    <fragment
+        android:id="@+id/aboutFragment"
+        android:name="com.example.ulchispeakingtrainer.ui.AboutFragment"
+        android:label="fragment_about"
+        tools:layout="@layout/fragment_about" />
+</navigation>
