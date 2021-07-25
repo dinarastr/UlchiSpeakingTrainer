@@ -17,10 +17,4 @@ class MainActivity : AppCompatActivity() {
         setContentView(R.layout.activity_main)
 
     }
-
-    override fun onCreateOptionsMenu(menu: Menu?): Boolean {
-       val inflater: MenuInflater = menuInflater
-        inflater.inflate(R.menu.menu, menu)
-        return true
-    }
 }

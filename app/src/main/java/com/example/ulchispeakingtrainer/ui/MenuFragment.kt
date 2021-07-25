@@ -1,11 +1,8 @@
 package com.example.ulchispeakingtrainer.ui
 
 import android.os.Bundle
+import android.view.*
 import androidx.fragment.app.Fragment
-import android.view.LayoutInflater
-import android.view.MenuItem
-import android.view.View
-import android.view.ViewGroup
 import androidx.navigation.findNavController
 import com.example.ulchispeakingtrainer.R
 import kotlinx.android.synthetic.main.fragment_menu.*
@@ -40,6 +37,11 @@ class MenuFragment : Fragment() {
                 openInfo()
             else -> super.onOptionsItemSelected(item)
         }
+    }
+
+    override fun onCreateOptionsMenu(menu: Menu, inflater: MenuInflater) {
+        super.onCreateOptionsMenu(menu, inflater)
+        inflater.inflate(R.menu.menu, menu)
     }
 
     private fun openInfo(): Boolean {
