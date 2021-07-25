@@ -11,7 +11,6 @@ import androidx.navigation.fragment.navArgs
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.example.ulchispeakingtrainer.R
 import com.example.ulchispeakingtrainer.adapters.PhraseAdapter
-import com.example.ulchispeakingtrainer.adapters.ThemeAdapter
 import com.example.ulchispeakingtrainer.viewmodel.SharedViewModel
 import kotlinx.android.synthetic.main.fragment_themes.view.*
 

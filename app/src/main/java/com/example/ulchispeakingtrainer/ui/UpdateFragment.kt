@@ -13,7 +13,6 @@ import androidx.navigation.fragment.navArgs
 import com.example.ulchispeakingtrainer.R
 import com.example.ulchispeakingtrainer.data.NewPhrase
 import com.example.ulchispeakingtrainer.viewmodel.SharedViewModel
-import kotlinx.android.synthetic.main.fragment_update.*
 import kotlinx.android.synthetic.main.fragment_update.view.*
 
 

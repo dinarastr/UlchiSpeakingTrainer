@@ -7,9 +7,7 @@ import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.viewModels
 import androidx.lifecycle.Observer
-import androidx.recyclerview.widget.GridLayoutManager
 import androidx.recyclerview.widget.LinearLayoutManager
-import androidx.recyclerview.widget.RecyclerView
 import com.example.ulchispeakingtrainer.R
 import com.example.ulchispeakingtrainer.adapters.ThemeAdapter
 import com.example.ulchispeakingtrainer.viewmodel.SharedViewModel

@@ -1,6 +1,5 @@
 package com.example.ulchispeakingtrainer.ui
 
-import android.content.Context
 import android.media.MediaPlayer
 import android.net.Uri
 import android.os.Bundle
@@ -12,7 +11,6 @@ import android.view.ViewGroup
 import android.widget.SeekBar
 import androidx.navigation.fragment.navArgs
 import com.example.ulchispeakingtrainer.R
-import com.example.ulchispeakingtrainer.playSoundFromAssets
 import kotlinx.android.synthetic.main.fragment_audio.*
 
 

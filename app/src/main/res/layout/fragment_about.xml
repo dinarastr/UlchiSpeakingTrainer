@@ -30,7 +30,7 @@
                 android:layout_height="wrap_content"/>
 
             <ImageView
-                android:src="@drawable/xesedi"
+                android:src="@drawable/round"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@id/info"

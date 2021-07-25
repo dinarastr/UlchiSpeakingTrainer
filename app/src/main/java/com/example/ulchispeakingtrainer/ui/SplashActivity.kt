@@ -5,10 +5,7 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.os.Handler
 import android.os.Looper
-import android.view.animation.Animation
-import android.view.animation.AnimationUtils
 import com.example.ulchispeakingtrainer.MainActivity
-import com.example.ulchispeakingtrainer.R
 import com.example.ulchispeakingtrainer.databinding.ActivitySplashBinding
 
 class SplashActivity : AppCompatActivity() {
