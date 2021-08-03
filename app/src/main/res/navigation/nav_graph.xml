@@ -7,7 +7,7 @@
 
     <fragment
         android:id="@+id/themesFragment"
-        android:name="com.example.ulchispeakingtrainer.ui.ThemesFragment"
+        android:name="ru.dinarastepina.ulchispeakingtrainer.ui.ThemesFragment"
         android:label="fragment_themes"
         tools:layout="@layout/fragment_themes" >
         <action
@@ -17,17 +17,17 @@
     </fragment>
     <fragment
         android:id="@+id/phrasesFragment"
-        android:name="com.example.ulchispeakingtrainer.ui.PhrasesFragment"
+        android:name="ru.dinarastepina.ulchispeakingtrainer.ui.PhrasesFragment"
         android:label="fragment_phrases"
         tools:layout="@layout/fragment_phrases" >
         <argument
             android:name="currentTheme"
-            app:argType="com.example.ulchispeakingtrainer.data.Theme" />
+            app:argType="ru.dinarastepina.ulchispeakingtrainer.data.Theme" />
 
     </fragment>
     <fragment
         android:id="@+id/textsFragment"
-        android:name="com.example.ulchispeakingtrainer.ui.TextsFragment"
+        android:name="ru.dinarastepina.ulchispeakingtrainer.ui.TextsFragment"
         android:label="fragment_texts"
         tools:layout="@layout/fragment_texts" >
         <action
@@ -37,7 +37,7 @@
     </fragment>
     <fragment
         android:id="@+id/menuFragment"
-        android:name="com.example.ulchispeakingtrainer.ui.MenuFragment"
+        android:name="ru.dinarastepina.ulchispeakingtrainer.ui.MenuFragment"
         android:label="fragment_menu"
         tools:layout="@layout/fragment_menu" >
         <action
@@ -55,16 +55,16 @@
     </fragment>
     <fragment
         android:id="@+id/audioFragment"
-        android:name="com.example.ulchispeakingtrainer.ui.AudioFragment"
+        android:name="ru.dinarastepina.ulchispeakingtrainer.ui.AudioFragment"
         android:label="fragment_audio"
         tools:layout="@layout/fragment_audio">
         <argument
             android:name="currentText"
-            app:argType="com.example.ulchispeakingtrainer.data.UlchiText" />
+            app:argType="ru.dinarastepina.ulchispeakingtrainer.data.UlchiText" />
     </fragment>
     <fragment
         android:id="@+id/newPhrasesFragment"
-        android:name="com.example.ulchispeakingtrainer.ui.NewPhrasesFragment"
+        android:name="ru.dinarastepina.ulchispeakingtrainer.ui.NewPhrasesFragment"
         android:label="fragment_new_phrases"
         tools:layout="@layout/fragment_new_phrases" >
         <action
@@ -76,21 +76,21 @@
     </fragment>
     <fragment
         android:id="@+id/addNewPhraseFragment"
-        android:name="com.example.ulchispeakingtrainer.ui.AddNewPhraseFragment"
+        android:name="ru.dinarastepina.ulchispeakingtrainer.ui.AddNewPhraseFragment"
         android:label="fragment_add_new_phrase"
         tools:layout="@layout/fragment_add_new_phrase" />
     <fragment
         android:id="@+id/updateFragment"
-        android:name="com.example.ulchispeakingtrainer.ui.UpdateFragment"
+        android:name="ru.dinarastepina.ulchispeakingtrainer.ui.UpdateFragment"
         android:label="fragment_update"
         tools:layout="@layout/fragment_update" >
         <argument
             android:name="phrase"
-            app:argType="com.example.ulchispeakingtrainer.data.NewPhrase"/>
+            app:argType="ru.dinarastepina.ulchispeakingtrainer.data.NewPhrase"/>
     </fragment>
     <fragment
         android:id="@+id/aboutFragment"
-        android:name="com.example.ulchispeakingtrainer.ui.AboutFragment"
+        android:name="ru.dinarastepina.ulchispeakingtrainer.ui.AboutFragment"
         android:label="fragment_about"
         tools:layout="@layout/fragment_about" />
 </navigation>
