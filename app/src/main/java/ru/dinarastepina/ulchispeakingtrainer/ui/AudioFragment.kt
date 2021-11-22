@@ -4,11 +4,11 @@ import android.media.MediaPlayer
 import android.net.Uri
 import android.os.Bundle
 import android.os.Handler
-import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.SeekBar
+import androidx.fragment.app.Fragment
 import androidx.navigation.fragment.navArgs
 import kotlinx.android.synthetic.main.fragment_audio.*
 import ru.dinarastepina.ulchispeakingtrainer.R
@@ -41,7 +41,7 @@ class AudioFragment : Fragment() {
                 override fun run() {
                     if (seekbar != null) {
                         seekbar.progress = mp?.currentPosition ?: 0
-                        handler.postDelayed(this, 1000)
+                        handler.postDelayed(this, 500)
                     }
                 }
             }, 0)
@@ -80,6 +80,6 @@ class AudioFragment : Fragment() {
 
 
     private fun playSound(soundName: String) {
-        mp = MediaPlayer.create(context, Uri.parse("android.resource://com.example.ulchispeakingtrainer/raw/" + soundName))
+        mp = MediaPlayer.create(context, Uri.parse("android.resource://ru.dinarastepina.ulchispeakingtrainer/raw/" + soundName))
     }
 }
